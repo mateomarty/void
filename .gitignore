@@ -1,0 +1,5 @@
+node_modules/
+dist/
+test/browser/screenshots/
+.DS_Store
+*.voidbackup

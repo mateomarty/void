@@ -1,0 +1,34 @@
+<!doctype html>
+<!--
+  Void: a peer-to-peer messenger in one file, with no server of its own.
+  Open this file in a browser. It loads nothing from the network: the
+  Content-Security-Policy below forbids every HTTP request and any script but its own.
+  Connections to other people are WebRTC data channels between browsers.
+  Two optional helpers run by third parties are on by default and can be switched off
+  in Settings: STUN servers (to learn this device's public address) and rendezvous
+  relays over WebSocket (to find contacts again after a restart).
+
+  Void is free software under the GNU Affero General Public License, version 3 or
+  later. It comes with no warranty.__SOURCE__
+
+  Bundled third-party code (licenses in THIRD-PARTY-NOTICES.md next to the source):
+  @noble/curves, @noble/hashes, @noble/ciphers, @noble/post-quantum (MIT),
+  qrcode-generator (MIT), jsQR (Apache-2.0).
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="__CSP__">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light dark">
+<title>Void</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%234f46c8'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23fff'/%3E%3C/svg%3E">
+<style>__CSS__</style>
+</head>
+<body>
+<div id="app"><p class="boot">Starting Void…</p></div>
+<noscript><p class="boot">Void needs JavaScript to run.</p></noscript>
+<script>__JS__</script>
+</body>
+</html>
